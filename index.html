@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra y Venta de Pokémon e Ítems en Pixelmon Rangers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+            cursor: pointer;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        a {
+            color: #007BFF;
+        }
+
+        /* Colores para secciones */
+        .section-title-1 { color: #c0392b; } /* Pokémon */
+        .section-title-2 { color: #2980b9; } /* Ítems */
+        .section-title-3 { color: #27ae60; } /* Lista Recomendada */
+        .subsection-title-1 { color: #8e44ad; } /* Evolución */
+        .subsection-title-2 { color: #d35400; } /* Invocación */
+        .subsection-title-3 { color: #f39c12; } /* Competitivos */
+        .subsection-title-4 { color: #16a085; } /* Mejora Estadísticas */
+        .subsection-title-5 { color: #7f8c8d; } /* Efectos Adicionales */
+        .subsection-title-6 { color: #2c3e50; } /* Clima o Terreno */
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h1>📢 Compra y Venta de Pokémon e Ítems en Pixelmon Rangers 📢</h1>
+        <p>Aquí podrás anunciar la compra o venta de Pokémon e ítems dentro del servidor. Los precios son solo una referencia y pueden variar según la oferta y demanda.</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title-1" onclick="toggleContent('pokemonPrices')">🏆 Precios de Pokémon 🏆</h2>
+        <div id="pokemonPrices" class="content">
+            <p>Si tu Pokémon tiene alguna de estas características, agrégale el siguiente costo extra:</p>
+            <ul>
+                <li>Habilidad oculta competitiva (HA): +175k</li>
+                <li>Naturaleza favorable competitivamente: +100k</li>
+                <li>EVs entrenados para competitivo: +50k</li>
+                <li>Shiny: el doble de la cantidad obtenida.</li>
+            </ul>
+
+            <h3>✨ Pokémon (Precios según rareza y utilidad competitiva) ✨</h3>
+            <ul>
+                <li>Común o Poco común: 50k - 75k</li>
+                <li>Competitivo o Raro: 75k - 150k (+25k por cada IV al 31)</li>
+                <li>Competitivo y Muy Raro: 200k - 300k (+75k por cada IV al 31)</li>
+                <li>Ditto 100% IVs: 2M - 4M (Doble si es Shiny)</li>
+            </ul>
+
+            <h3>🔥 Pokémon Legendarios y Especiales 🔥</h3>
+            <ul>
+                <li>Sublegendarios (Legendarios menores): Precio base: 400k +75k por cada IV al 31</li>
+                <li>Legendarios mayores: Precio base: 1M +100k por cada IV al 31</li>
+                <li>Singulares / Míticos / Ultra Entes: Precio base: 650k +75k por cada IV al 31</li>
+            </ul>
+            <p>Dato extra: al revisar la rareza de un Pokémon, pueden aparecer dos rarezas diferentes. Se tomará en cuenta la que tenga mayor cantidad, en caso de que ambas tengan la misma cantidad, se considerará la que sea más rara.</p>
+            <p>ℹ️ Puedes consultar la clasificación de cada Pokémon en: <a href="https://www.wikidex.net/wiki/Pokémon_legendario#Clasificación">WikiDex</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title-2" onclick="toggleContent('itemPrices')">🎒 Precios de Ítems (Mínimos recomendados) 🎒</h2>
+        <div id="itemPrices" class="content">
+            <ul>
+                <li>Megapiedras: 200k - 1M (según rareza)</li>
+                <li>Caramelos raros: 5k - 6.5k por unidad</li>
+                <li>Chapa plateada: 200k - 250k</li>
+                <li>Chapa dorada: 800k - 1M</li>
+                <li>Master Ball: 200k</li>
+                <li>Exp. All: 125k</li>
+                <li>Parche habilidad: 250k</li>
+                <li>Cápsula habilidad: 75k</li>
+                <li>Tablas Arceus: Desde 200k (según rareza, sin máximo)</li>
+                <li>Movimientos Z generales: 25k</li>
+                <li>Movimientos Z exclusivos: 75k</li>
+                <li>Movimientos Z únicos: 75k</li>
+                <li>Tabla Legendaria: 3M</li>
+                <li>Discos de Silvally: 25k</li>
+                <li>Zumos de EVs: Máximo 25k por stack</li>
+                <li>Red Orb & Blue Orb: 250k</li>
+                <li>Orbe de las Aves Legendarias: 250k</li>
+                <li>Modificadores: 75k - 750k (según tipo)</li>
+                <li>(1)Token: 1k</li>
+                <li>Caramelo XL: 40k</li>
+                <li>Supercaña: 250k</li>
+                <li>Trozo deseo: 75k</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title-3" onclick="toggleContent('recommendedPrices')">📜 Lista de Precios Recomendados 📜</h2>
+        <div id="recommendedPrices" class="content">
+            <h3 class="subsection-title-1" onclick="toggleContent('evolutionItems')">🔄 Objetos de Evolución 🔄</h3>
+            <div id="evolutionItems" class="content">
+                <ul>
+                    <li>Link Cable - 75k</li>
+                    <li>Metal Coat - 75k</li>
+                    <li>King's Rock - 80k</li>
+                    <li>Thunder Stone - 7.5k</li>
+                    <li>Fire Stone - 5k</li>
+                    <li>Water Stone - 5k</li>
+                    <li>Leaf Stone - 5k</li>
+                    <li>Moon Stone - 5k</li>
+                    <li>Sun Stone - 5k</li>
+                    <li>Shiny Stone - 5k</li>
+                    <li>Dawn Stone - 5k</li>
+                    <li>Dusk Stone - 7.5k</li>
+                    <li>Upgrade - 50k</li>
+                    <li>Dubious Disc - 50k</li>
+                    <li>Black Augurite - 90k</li>
+                    <li>Chipped Pot - 25k</li>
+                    <li>Cracked Pot - 25k</li>
+                    <li>Protector - 75k</li>
+                    <li>Magmarizer - 75k</li>
+                    <li>Electirizer - 80k</li>
+                    <li>Peat Block - 100k</li>
+                    <li>Sachet - 25k</li>
+                    <li>Whipped Dream - 25k</li>
+                    <li>Sweet Apple - 25k</li>
+                    <li>Tart Apple - 25k</li>
+                    <li>Leader's Crest - 100k</li>
+                    <li>Malicious Armor - 100k</li>
+                    <li>Auspicious Armor - 85k</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title-2" onclick="toggleContent('summoningItems')">🌀 Objetos de Invocación de Pokémon 🌀</h3>
+            <div id="summoningItems" class="content">
+                <ul>
+                    <li>Griseous Orb - 350k</li>
+                    <li>Lustrous Orb - 350k</li>
+                    <li>Adamant Orb - 350k</li>
+                    <li>Red Chain - 700k</li>
+                    <li>Gemas del Trio del Lago - 250k</li>
+                    <li>Prison Bottle - 350k</li>
+                    <li>Tidal Bell - 200k</li>
+                    <li>Clear Bell - 200k</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title-3" onclick="toggleContent('competitiveItems')">⚔ Objetos Competitivos ⚔</h3>
+            <div id="competitiveItems" class="content">
+                <ul>
+                    <li>Choice Band - 125k</li>
+                    <li>Choice Scarf - 125k</li>
+                    <li>Choice Specs - 125k</li>
+                    <li>Leftovers - 75k</li>
+                    <li>Loaded Dice - 75k</li>
+                    <li>Focus Sash - 50k</li>
+                    <li>Assault Vest - 100k</li>
+                    <li>Life Orb - 100k</li>
+                    <li>Punching Glove - 25k</li>
+                    <li>Booster Energy - 75k</li>
+                    <li>Black Sludge - 100k</li>
+                    <li>Black Glasses - 50k</li>
+                    <li>Focus Band - 40k</li>
+                    <li>Expert Belt - 30k</li>
+                    <li>Black Belt - 25k</li>
+                    <li>Quick Claw - 50k</li>
+                    <li>Razor Claw - 60k</li>
+                    <li>Silk Scarf - 15k</li>
+                    <li>Razor Fang - 60k</li>
+                    <li>Weakness Policy - 25k</li>
+                    <li>Eviolite - 50k</li>
+                    <li>Amulet Coin - 50k</li>
+                    <li>Heavy-Duty Boots - 75k</li>
+                    <li>Eject Button - 60k</li>
+                    <li>Rocky Helmet - 100k</li>
+                    <li>Air Balloon - 30k</li>
+                    <li>Red Card - 50k</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title-4" onclick="toggleContent('statBoostingItems')">📈 Objetos de Mejora de Estadísticas 📈</h3>
+            <div id="statBoostingItems" class="content">
+                <ul>
+                    <li>Muscle Band - 35k</li>
+                    <li>Light Clay - 50k</li>
+                    <li>Wide Lens - 60k</li>
+                    <li>Wise Glasses - 50k</li>
+                    <li>Scope Lens - 25k</li>
+                    <li>Macho Brace - 50k</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title-5" onclick="toggleContent('additionalEffectItems')">🎭 Objetos de Efectos Adicionales 🎭</h3>
+            <div id="additionalEffectItems" class="content">
+                <ul>
+                    <li>Flame Orb - 75k</li>
+                    <li>Toxic Orb - 75k</li>
+                    <li>Eject Button - 50k</li>
+                    <li>Shed Shell - 15k</li>
+                    <li>Protective Pads - 75k</li>
+                    <li>Mental Herb - 50k</li>
+                    <li>Power Herb - 50k</li>
+                    <li>White Herb - 50k</li>
+                    <li>Smoke Ball - 40k</li>
+                    <li>Metronome - 75k</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title-6" onclick="toggleContent('weatherTerrainItems')">🌦 Objetos de Clima o Terreno 🌦</h3>
+            <div id="weatherTerrainItems" class="content">
+                <ul>
+                    <li>Icy Rock - 25k</li>
+                    <li>Heat Rock - 25k</li>
+                    <li>Damp Rock - 25k</li>
+                    <li>Smooth Rock - 25k</li>
+                    <li>Room Service - 75k</li>
+                    <li>Grassy Seed - 50k</li>
+                    <li>Electric Seed - 50k</li>
+                    <li>Misty Seed - 50k</li>
+                    <li>Psychic Seed - 50k</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
