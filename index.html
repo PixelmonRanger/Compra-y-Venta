@@ -4,44 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra y Venta de Pokémon e Ítems en Pixelmon Rangers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1, h2, h3 {
-            color: #333;
-            cursor: pointer;
-        }
-        .section {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .content {
-            display: none;
-            margin-top: 10px;
-        }
-        a {
-            color: #007BFF;
-        }
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+    }
+    h1, h2, h3 {
+        color: #333;
+        cursor: pointer;
+    }
+    .section {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .content {
+        display: none;
+        margin-top: 10px;
+    }
+    a {
+        color: #007BFF;
+    }
 
-        /* Colores para secciones */
-        .section-title-1 { color: #c0392b; } /* Pokémon */
-        .section-title-2 { color: #2980b9; } /* Ítems */
-        .section-title-3 { color: #27ae60; } /* Lista Recomendada */
-        .section-title-4 { color: #e67e22; } /* Megas */
-        .section-title-5 { color: #8e44ad; } /* Tablas de Arcues */
-        .subsection-title-1 { color: #8e44ad; } /* Evolución */
-        .subsection-title-2 { color: #d35400; } /* Invocación */
-        .subsection-title-3 { color: #f39c12; } /* Competitivos */
-        .subsection-title-4 { color: #16a085; } /* Mejora Estadísticas */
-        .subsection-title-5 { color: #7f8c8d; } /* Efectos Adicionales */
-        .subsection-title-6 { color: #2c3e50; } /* Clima o Terreno */
-    </style>
+    /* Colores para secciones */
+    .section-title-1 {
+        color: #c0392b;
+        background-color: #fdecea;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .section-title-2 {
+        color: #2980b9;
+        background-color: #eaf3fb;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .section-title-3 {
+        color: #27ae60;
+        background-color: #e9f7ef;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .section-title-4 {
+        color: #e67e22;
+        background-color: #fef5e7;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .section-title-5 {
+        color: #8e44ad;
+        background-color: #f5eef8;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .subsection-title-1 {
+        color: #8e44ad;
+        background-color: #f5eef8;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .subsection-title-2 {
+        color: #d35400;
+        background-color: #fae5d3;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .subsection-title-3 {
+        color: #f39c12;
+        background-color: #fef9e7;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .subsection-title-4 {
+        color: #16a085;
+        background-color: #e8f8f5;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .subsection-title-5 {
+        color: #7f8c8d;
+        background-color: #f2f3f4;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .subsection-title-6 {
+        color: #2c3e50;
+        background-color: #ebedef;
+        padding: 8px;
+        border-radius: 5px;
+    }
+</style>
+
 </head>
 <body>
 
