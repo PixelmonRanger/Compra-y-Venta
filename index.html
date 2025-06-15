@@ -4,55 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra y Venta de Pokémon e Ítems en Pixelmon Rangers</title>
-   <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #e0e7ff; /* Fondo general suave azul */
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+            cursor: pointer;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        a {
+            color: #007BFF;
+        }
 
-    h1, h2, h3 {
-        color: #333;
-        cursor: pointer;
-    }
-
-    .section {
-        background: #ffffff; /* Fondo blanco para secciones */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-
-    .content {
-        display: none;
-        margin-top: 10px;
-        background-color: #f9f9f9; /* Fondo gris claro para subcontenido */
-        padding: 15px;
-        border-radius: 8px;
-    }
-
-    a {
-        color: #007BFF;
-    }
-
-    /* Colores para secciones (títulos) */
-    .section-title-1 { color: #c0392b; background-color: #fdecea; padding: 10px; border-radius: 6px; }
-    .section-title-2 { color: #2980b9; background-color: #eaf4fd; padding: 10px; border-radius: 6px; }
-    .section-title-3 { color: #27ae60; background-color: #e9f7ef; padding: 10px; border-radius: 6px; }
-    .section-title-4 { color: #e67e22; background-color: #fdf2e9; padding: 10px; border-radius: 6px; }
-    .section-title-5 { color: #8e44ad; background-color: #f5eaf7; padding: 10px; border-radius: 6px; }
-
-    /* Colores para subsecciones */
-    .subsection-title-1 { color: #8e44ad; background-color: #f5eaf7; padding: 8px; border-radius: 6px; }
-    .subsection-title-2 { color: #d35400; background-color: #fae5d3; padding: 8px; border-radius: 6px; }
-    .subsection-title-3 { color: #f39c12; background-color: #fef5e7; padding: 8px; border-radius: 6px; }
-    .subsection-title-4 { color: #16a085; background-color: #e8f8f5; padding: 8px; border-radius: 6px; }
-    .subsection-title-5 { color: #7f8c8d; background-color: #ecf0f1; padding: 8px; border-radius: 6px; }
-    .subsection-title-6 { color: #2c3e50; background-color: #d6eaf8; padding: 8px; border-radius: 6px; }
-</style>
-
-
+        /* Colores para secciones */
+        .section-title-1 { color: #c0392b; } /* Pokémon */
+        .section-title-2 { color: #2980b9; } /* Ítems */
+        .section-title-3 { color: #27ae60; } /* Lista Recomendada */
+        .section-title-4 { color: #e67e22; } /* Megas */
+        .section-title-5 { color: #8e44ad; } /* Tablas de Arcues */
+        .subsection-title-1 { color: #8e44ad; } /* Evolución */
+        .subsection-title-2 { color: #d35400; } /* Invocación */
+        .subsection-title-3 { color: #f39c12; } /* Competitivos */
+        .subsection-title-4 { color: #16a085; } /* Mejora Estadísticas */
+        .subsection-title-5 { color: #7f8c8d; } /* Efectos Adicionales */
+        .subsection-title-6 { color: #2c3e50; } /* Clima o Terreno */
+    </style>
 </head>
 <body>
 
@@ -254,51 +243,51 @@
             <ul>
                 <li>Abomasite – 250k</li>
                 <li>Absolite – 300k</li>
-                <li>Aerodactylite – 550k</li>
-                <li>Aggronite – 600k</li>
-                <li>Alakazite – 700k</li>
-                <li>Altarianite – 650k</li>
-                <li>Ampharosite – 400k</li>
-                <li>Audinite – 200k</li>
-                <li>Banettite – 350k</li>
-                <li>Beedrillite – 450k</li>
-                <li>Blastoisinite – 750k</li>
-                <li>Blazikenite – 800k</li>
-                <li>Cameruptite – 400k</li>
-                <li>Charizardite X – 1M</li>
-                <li>Charizardite Y – 1M</li>
+                <li>Aerodactylite – 400k</li>
+                <li>Aggronite – 500k</li>
+                <li>Alakazite – 850k</li>
+                <li>Altarianite – 700k</li>
+                <li>Ampharosite – 350k</li>
+                <li>Audinite – 300k</li>
+                <li>Banettite – 250k</li>
+                <li>Beedrillite – 500k</li>
+                <li>Blastoisinite – 600k</li>
+                <li>Blazikenite – 900k</li>
+                <li>Cameruptite – 350k</li>
+                <li>Charizardite X – 1.2M</li>
+                <li>Charizardite Y – 1.2M</li>
                 <li>Diancite – 1M</li>
                 <li>Galladite – 600k</li>
                 <li>Garchompite – 950k</li>
-                <li>Gardevoirite – 750k</li>
-                <li>Gengarite – 850k</li>
-                <li>Glalitite – 350k</li>
-                <li>Gyaradosite – 700k</li>
-                <li>Heracronite – 550k</li>
-                <li>Houndoominite – 400k</li>
-                <li>Kangaskhanite – 850k</li>
+                <li>Gardevoirite – 800k</li>
+                <li>Gengarite – 950k</li>
+                <li>Glalitite – 300k</li>
+                <li>Gyaradosite – 750k</li>
+                <li>Heracronite – 600k</li>
+                <li>Houndoominite – 350k</li>
+                <li>Kangaskhanite – 700k</li>
                 <li>Latiasite – 1M</li>
                 <li>Latiosite – 1M</li>
-                <li>Lopunnite – 600k</li>
-                <li>Lucarionite – 950k</li>
-                <li>Manectite – 350k</li>
-                <li>Mawilite – 400k</li>
-                <li>Medichamite – 350k</li>
-                <li>Metagrossite – 900k</li>
-                <li>Mewtwonite X – 1M</li>
-                <li>Mewtwonite Y – 1M</li>
-                <li>Pidgeotite – 250k</li>
-                <li>Pinsirite – 350k</li>
-                <li>Sablenite – 550k</li>
+                <li>Lopunnite – 850k</li>
+                <li>Lucarionite – 800k</li>
+                <li>Manectite – 400k</li>
+                <li>Mawilite – 950k</li>
+                <li>Medichamite – 800k</li>
+                <li>Metagrossite – 850k</li>
+                <li>Mewtwonite X – 1.2M</li>
+                <li>Mewtwonite Y – 1.2M</li>
+                <li>Pidgeotite – 400k</li>
+                <li>Pinsirite – 500k</li>
+                <li>Sablenite – 800k</li>
                 <li>Salamencite – 950k</li>
-                <li>Sceptilite – 650k</li>
-                <li>Scizorite – 700k</li>
-                <li>Sharpedonite – 350k</li>
-                <li>Slowbronite – 400k</li>
-                <li>Steelixite – 600k</li>
-                <li>Swampertite – 700k</li>
-                <li>Tyranitarite – 900k</li>
-                <li>Venusaurite – 750k</li>
+                <li>Sceptilite – 550k</li>
+                <li>Scizorite – 900k</li>
+                <li>Sharpedonite – 500k</li>
+                <li>Slowbronite – 450k</li>
+                <li>Steelixite – 500k</li>
+                <li>Swampertite – 800k</li>
+                <li>Tyranitarite – 750k</li>
+                <li>Venusaurite – 800k</li>
             </ul>
         </div>
     </div>
